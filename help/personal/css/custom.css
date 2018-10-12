@@ -1,0 +1,295 @@
+.sidebar-wrapper,
+.sidebar-wrapper .sidebar-dropdown > a:after,
+.sidebar-wrapper ul li a i,
+.page-wrapper .page-content {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/*----------------page-wrapper----------------*/
+.page-wrapper{
+    height: 100vh;
+}
+
+/*----------------toggeled sidebar----------------*/
+.page-wrapper.toggled .sidebar-wrapper{
+    left:0px;
+}
+@media screen and (min-width: 768px) {
+    .page-wrapper.toggled .page-content{
+        padding-left: 300px;
+    }
+}
+
+.page-wrapper.toggled #toggle-sidebar{
+    position: absolute;
+    color: #cacaca;
+}
+
+/*----------------sidebar-wrapper----------------*/
+.sidebar-wrapper{
+    width: 20%;
+    background: #f7f5f7;
+    height: 100%;
+    max-height: 100%;
+    position: fixed;
+    top: 80px;
+    left: -300px;
+}
+
+
+
+.sidebar-wrapper ul li:hover a i,
+.sidebar-wrapper .sidebar-dropdown .sidebar-submenu li a:hover:before,
+.sidebar-wrapper .sidebar-search input.search-menu:focus + span{
+    color: #0086fd;
+}
+
+.sidebar-wrapper ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar-wrapper a{
+    text-decoration: none;
+} 
+/*----------------sidebar-content----------------*/
+.sidebar-content{
+    max-height: calc(100% - 30px);
+    height: calc(100% - 30px);
+    overflow-y: scroll;
+    position: relative;
+    
+}
+.sidebar-content.desktop{
+    overflow-y: hidden;
+}
+/*--------------------sidebar-brand----------------------*/
+.sidebar-wrapper .sidebar-brand {
+        padding: 15px 20px;
+        text-align: center;
+        border-bottom: 1px solid #f7f5f7;
+}
+
+.sidebar-wrapper .sidebar-brand > a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*--------------------sidebar-header----------------------*/
+.sidebar-wrapper .sidebar-header{
+    padding: 20px;
+    overflow: hidden;
+    border-top: 1px solid #f7f5f7;
+    border-bottom: 1px solid #f7f5f7;
+}
+.sidebar-wrapper .sidebar-header .user-pic{
+        float: left;
+        width: 60px;
+        padding: 2px;
+        border: 1px solid #585858;
+        border-radius: 8px;
+        margin-right:15px;
+}
+.sidebar-wrapper .sidebar-header .user-info{
+        float: left;
+        color: #0c1119;
+}
+.sidebar-wrapper .sidebar-header .user-info span{
+        display: block;
+}
+.sidebar-wrapper .sidebar-header .user-info .user-role{
+        font-size: 12px;
+        color: #929292;
+}
+.sidebar-wrapper .sidebar-header .user-info .user-status{
+        display: inline-block;
+}
+
+/*----------------------sidebar-menu-------------------------*/
+
+.sidebar-wrapper .sidebar-menu .header-menu span{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #b9b9b9;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.sidebar-wrapper .sidebar-menu ul li a{
+    display: inline-block;
+    width: 100%;
+    color: #9c9c9c;
+    text-decoration: none;
+    transition:color .3s;
+    position: relative;
+    padding: 5px 30px 5px 20px;
+}
+
+.sidebar-wrapper .sidebar-menu ul li:hover > a{
+    color: #0c1119;
+}
+.move{
+    height: 4px;
+    width: 110px;
+    border-top: 4px solid gray;/*只需要将上边显示出来*/
+    position: absolute;
+/*    top: 100px;*/
+    transition: top .2s ease-in-out 0s;/*包含四个过度属性：执行变换属性、执行时间、速率、延迟*/
+    -webkit-transition: top .2s ease-in-out 0s;/*chrome和safari*/
+    -moz-transition: top .2s ease-in-out 0s;/*firefox*/
+    -o-transition: top .2s ease-in-out 0s;/*opera*/
+}
+li:nth-child(1):hover~ .move{    /*li元素的父元素的第一个子元素，当鼠标停留其上时，move元素的left属性改变*/
+    top: 135px;
+}
+li:nth-child(2):hover~ .move{
+    top: 169px;
+}
+li:nth-child(3):hover~ .move{
+    top: 203px;
+}
+li:nth-child(4):hover~ .move{
+    top: 237px;
+}
+li:nth-child(5):hover~ .move{
+    top: 271px;
+}
+
+
+
+.sidebar-wrapper .sidebar-menu ul li a span.label,
+.sidebar-wrapper .sidebar-menu ul li a span.badge{
+    float: right;
+    margin-top: 7px;
+    margin-left:5px;
+}
+
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a .badge,
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a .label{
+    float: right;    
+     margin-top: 0px;
+}
+
+.sidebar-wrapper .sidebar-menu .badge{
+    background: #384558;
+}
+.sidebar-wrapper .sidebar-menu .sidebar-submenu{
+    display: none;
+}
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown.active > a:after{
+    transform:rotate(90deg);
+    right: 17px;
+}
+/*--------------------------side-footer------------------------------*/
+
+.sidebar-footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    background: #1c232f;  
+    box-shadow: 0px -1px 5px #0c1119;
+    border-top: 1px solid #222b35;
+}
+.sidebar-footer > a {
+    flex-grow: 1;
+    text-align: center;
+    border-left: 1px solid #222b35;
+    border-right: 1px solid #10151d;
+    height: 30px;
+    line-height: 30px;
+    color:#9c9c9c;
+    position: relative;
+}
+.sidebar-footer > a:first-child {
+    border-left: none;
+}
+.sidebar-footer > a:last-child {
+    border-right: none;
+}
+.sidebar-footer > a:hover{
+    color: #ccc;
+}
+.sidebar-footer > a .notification {
+    position: absolute;
+    top: 0;
+}
+
+/*--------------------------page-content-----------------------------*/
+.page-wrapper .page-content{
+    display: inline-block;
+    width: 100%;
+    padding-left: 0px;
+}
+.page-wrapper .page-content > div {
+    padding: 80px 40px;
+}
+.page-wrapper .page-content {
+    overflow-x: hidden;
+}
+/*---------------------toggle-sidebar button-------------------------*/
+#toggle-sidebar{
+    position: fixed;
+    top: 13px;
+    left: 25px;
+    /* color: #0f151f; */
+    color: #D5D6E2;
+    font-size: 18px;
+}
+
+/*----------------  Scroll bar style   --------------- */
+
+.mCSB_scrollTools{
+    width: 6px;
+}
+.mCSB_inside>.mCSB_container{
+    margin-right: 0px; 
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar
+{
+    background: #657692;
+}
+
+.top-img{
+    background-color: #9a97ac;
+    height:80px;
+    top: 0px;
+    position: fixed;
+    width: 100%;
+}
+.p1{
+    padding-left: 20px;
+}
+.container {
+    float: left;
+    width: 80%;
+    height: 86%;
+    top: 80px;
+    left: 20%;
+    position: relative;
+}
+.iframe{
+    width: 100%;
+    padding-top: 0;
+    height: 100%;
+    border-style: none;
+}
+
+.p1{
+    padding-left: 20px;
+}
+.p2{
+    padding-left: 150px;
+    margin-top: -60px;
+    font-family: sans-serif; 
+    font-size:24px; 
+    color: white;
+}

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>注册</title>
+<style>
+        .top-img{
+            background-color: #9a97ac;
+            height:80px;
+            top: 0px;
+            position: fixed;
+            width: 100%;
+        }
+        .p1{
+            padding-left: 20px;
+        }
+        .p2{
+            padding-left: 150px;
+            margin-top: -60px;
+            font-family: cursive; 
+            font-size:24px; 
+            color: white;
+        }
+        .left{
+            margin-top: 20px;
+            width: 400px;
+            display: inline-block;
+            float: left;
+            background-color: #f7f5f7;      
+        }
+        .pg_body{
+            margin-top: 80px;
+            font-size: 18px;
+            display: inline-block;
+            width: 200px;
+        }
+        .pg_body .menu{
+            width: 800px;
+            padding: 15px;    
+            float: left;
+            /*font-weight: bold;*/
+        }
+        input[type="text"]{
+            width: 200px;
+            height: 25px;
+            border-radius: 6px;
+        }
+        input[type="password"]{
+            width: 200px;
+            height: 25px;
+            border-radius: 6px;
+        }
+        input[type="button"]{
+            background-color: #555555;
+               border: none;
+            color: white;
+            padding: 12px 29px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 17px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        input[type="submit"]{
+            background-color: #555555;
+               border: none;
+            color: white;
+            padding: 12px 29px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 17px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .kong{
+            margin-top: -54px;
+            margin-left: 140px;
+            float:left;
+            padding: 15px;
+        }
+        .img{
+            width: 50px;
+            height: 40px;
+        }
+        .can{
+            width: 1220px;
+            height: 40px;
+            line-height: 40px;
+            margin: 0 auto;
+            text-align: center;
+            display: inline-block;
+        }
+        .tian{
+            color: red;
+            float: right;
+            font-size: 12px;
+            margin-right: -100px;
+            margin-top: -25px;
+        }
+    </style>
+</head>
+<body id="i88" style="margin: 0">
+    <!-- 顶部 -->
+    <div class="top-img">
+        <div class="logo">
+            <img class="p1" src="images/logo1.png">
+            <p class="p2">注册</p>
+        </div>
+    </div>
+
+    <form name="tijiao" method="post" onsubmit="return check()" action="winford.top">
+        <div class="left"></div>
+        <div class="pg_body">
+                <div class="menu">用户名:</div>
+                    <div class="kong">
+                        <input id="text1" type="text" name="01" placeholder="请输入用户名" onblur="check()"><span id="div1" class="tian" style="margin-top: 4px">*(为必填)<span>
+                    </div>
+                <div class="menu">真实姓名:</div>
+                    <div class="kong">
+                        <input id="i2" type="text" name="01">
+                    </div>
+                <div class="menu">性别:</div>
+                    <div class="kong" style="width:200px;">
+                         男<input type="radio" name="gender" value="1">
+                         女 <input type="radio" name="gender" value="2">
+                    </div>
+                <div class="menu">密码:</div>
+                    <div class="kong">
+                        <input id="text2" type="password" name="02" onblur="check()">
+                        <span id="div2" class="tian" style="margin-top: -25px">*(为必填)<span>
+                    </div>
+                <div class="menu">确认密码:</div>
+                    <div class="kong">
+                        <input id="text3" type="password" name="01" onblur="check()">
+                        <span id="div3" class="tian">*(为必填)<span>
+                    </div>
+                <div class="menu">电话号码:</div>
+                    <div class="kong">
+                        <input id="i5" type="text" name="01">
+                    </div>
+                <div class="menu">邮箱地址:</div>
+                    <div class="kong">
+                        <input id="text4" type="text" name="01" onblur="check()">
+                        <span id="div4" class="tian">*(为必填)<span>
+                    </div>
+                <div class="menu">头像上传:    </div>
+                    <div class="kong">
+                        <input type="file" name="file" value="选择头像" accept="image/*">
+                </div>    
+                <!-- <div class="menu">爱好:</div>
+                    <div class="kong" style="width: 300px;">
+                        撩妹 <input type="checkbox" name="favor">
+                        写代码 <input type="checkbox" name="favor">
+                        篮球 <input type="checkbox" name="favor">
+                        足球 <input type="checkbox" name="favor">
+                    </div>        
+                <div class="menu">个人签名:</div>
+                <div class="kong">
+                    <textarea name="meno" style="width: 280px;height: 40px;">
+                    有点懒。。。。
+                    </textarea>
+                </div> -->
+        </div>
+        <div class="can">
+            <input id="i111" type="submit" name="002" value="注  册">
+            <p style="width: 200px;display: inline-block;"></p>
+            <input id="i222" type="button" name="004" value="取  消">
+
+        </div>
+    </form>
+    <script type="text/javascript">
+            //刷新or取消
+            document.getElementById('i77').onclick = function(){
+                location.reload();
+            }
+            document.getElementById('i222').onclick = function(){
+                location.reload();
+            }
+
+            //用户名验证
+            function checkname(){ 
+                var div = document.getElementById("div1"); 
+                div.innerHTML = ""; 
+                var name1 = document.tijiao.text1.value; 
+                if (name1 == "") { 
+                div.innerHTML = "用户名不能为空！"; 
+                document.tijiao.text1.focus(); 
+                return false; 
+            } 
+                if (name1.length < 4 || name1.length > 16) { 
+                div.innerHTML = "长度4-16个字符"; 
+                document.tijiao.text1.select(); 
+                return false; 
+            } 
+                var charname1 = name1.toLowerCase(); 
+                for (var i = 0; i < name1.length; i++) { 
+                var charname = charname1.charAt(i); 
+                if (!(charname >= 0 && charname <= 9) && (!(charname >= 'a' && charname <= 'z')) && (charname != '_')) { 
+                    div.innerHTML = "用户名包含非法字符"; 
+                    document.form1.text1.select(); 
+                    return false; 
+                } 
+            } 
+                return true;
+        }
+
+            //密码验证
+            function checkpassword(){ 
+                var div = document.getElementById("div2"); 
+                div.innerHTML = ""; 
+                var password = document.tijiao.text2.value; 
+                if (password == "") { 
+                div.innerHTML = "密码不能为空"; 
+                document.tijao.text2.focus(); 
+                return false; 
+            } 
+                if (password.length < 4 || password.length > 16) { 
+                div.innerHTML = "密码长度为4-16位"; 
+                document.tijiao.text2.select(); 
+                return false; 
+                } 
+                return true; 
+        }
+
+            function checkrepassword(){ 
+                var div = document.getElementById("div3"); 
+                div.innerHTML = ""; 
+                var password = document.tijiao.text2.value; 
+                var repass = document.tijiao.text3.value; 
+                if (repass == "") { 
+                div.innerHTML = "密码不能为空"; 
+                document.tijiao.text3.focus(); 
+                return false; 
+            } 
+                if (password != repass) { 
+                div.innerHTML = "密码不一致"; 
+                document.tijiao.text3.select(); 
+                return false; 
+            } 
+                return true; 
+        }
+        //邮箱验证
+        function checkEmail(){ 
+            var div = document.getElementById("div4"); 
+            div.innerHTML = ""; 
+            var email = document.tijiao.text5.value; 
+            var sw = email.indexOf("@", 0); 
+            var sw1 = email.indexOf(".", 0); 
+            var tt = sw1 - sw; 
+            if (email.length == 0) { 
+            div.innerHTML = "邮箱不能为空"; 
+            document.tijiao.text5.focus(); 
+            return false; 
+        } 
+
+            if (email.indexOf("@", 0) == -1) { 
+            div.innerHTML = "必须包含@符号"; 
+            document.tijiao.text5.select(); 
+            return false; 
+        } 
+
+            if (email.indexOf(".", 0) == -1) { 
+            div.innerHTML = "必须包含.符号"; 
+            document.tijiao.text5.select(); 
+            return false; 
+        } 
+
+            if (tt == 1) { 
+            div.innerHTML = "@和.不能一起"; 
+            document.tijiao.text5.select(); 
+            return false; 
+        }
+
+            if (sw > sw1) { 
+            div.innerHTML  = "@符号必须在.之前"; 
+            document.tijiao.text5.select(); 
+            return false; 
+        } 
+            else { 
+            return true; 
+            }
+        return ture; 
+        }
+
+            function check(){ 
+            if (checkname() && checkpassword() && checkrepassword() && checkEmail()) { 
+            return true; 
+            } 
+            else { 
+            return false; 
+        } 
+    } 
+    </script>
+</body>
+</html>

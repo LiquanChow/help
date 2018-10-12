@@ -1,0 +1,445 @@
+.haitaodashi-top-wrap{
+    height: 32px;
+    background-color: #ebebeb;
+    min-width: 1080px;
+}
+.haitaodashi-top-area{
+    width: 1080px;
+    margin: 0 auto;
+}
+.haitaodashi-top-area .fleft{
+    float: left;
+    line-height: 32px;
+}
+.haitaodashi-top-area .fright{
+    float: right;
+    line-height: 32px;
+}
+.haitaodashi-top-area ul {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 3px;
+}
+.haitaodashi-top-area li{
+    float: left;
+    cursor: pointer;
+}
+.haitaodashi-top-area .fleft li{
+    margin-right: 3px;
+}
+.haitaodashi-top-area .fright li{
+    margin-left: 6px;
+}
+#shihuo-nav-area{
+    border-bottom: 2px solid #333;
+    min-width: 1080px;
+}
+.shihuo-nav-area a:hover,.haitaodashi-top-wrap a:hover{
+    color:#a700ff;
+}
+.haitaodashi-top-wrap .logout{
+    text-decoration: underline;
+}
+.haitaodashi-top-wrap .user-info{
+    margin-left: 10px;
+}
+.logos-box {font:12px \5FAE\8F6F\96C5\9ED1,Arial,sans-serif;height:44px;margin: 0 auto;padding: 19px 0 15px 0;position: relative;width: 1080px;z-index: 59;}
+.logos-box .logo {float: left; width:130px;height: 44px;overflow: hidden;margin-right: 150px;}
+.logos-box .down{ float: left; width: 100px;margin-right: 20px; height: 56px;margin-top:10px;background: url("/images/trade/app_d.png") center no-repeat;}
+.logos-box .down:hover{background: url("/images/trade/app_dd.png") center no-repeat;}
+.logos-box .amazon{ float: left; width: 150px; height: 56px;border-left:1px solid #e5e5e5;background: url("/images/trade/amazon.png") center no-repeat;}
+.logos-box .search {position:relative;float: left;height: 39px; margin-top: 2px;width: 536px;background: url('//sh1.hoopchina.com.cn/images/haitaodashi/input-border.png') no-repeat scroll left top transparent;padding: 1px;}
+.logos-box .search .input{position:relative;float:left;height:37px;width:380px;}
+.logos-box .search .input input{font:12px \5FAE\8F6F\96C5\9ED1,Arial,sans-serif;outline:none;border:0 none;color:#9c9c9c;height:37px;padding-left:10px;width:340px;line-height: 37px;}
+.logos-box .search .btn{background:url('//sh1.hoopchina.com.cn/images/haitaodashi/icon-search-btn.png') no-repeat center center transparent;color:#fff;cursor:pointer;float:right;font-size:16px;height:39px;line-height:39px;margin-top: -1px;text-align:center;width:64px;}
+.logos-box .search #cancelBtn{position: absolute;right: 0px;display: none;background-image: none;width: 65px;background-color:#a700ff; }
+.logos-box .imgs{margin-top:-8px; margin-left: 50px; position: relative; z-index: 88;}
+.logos-box .imgs .erweima{position: absolute;left: 10px;top: 42px; z-index: 88; display: none;}
+.logos-box .search .tips-bg1{position: absolute;right: 95px;top: 1px;width: 210px;height: 37px;line-height: 37px;background-color: transparent;z-index: 10;color: #FFFFFF;font-size: 12px;display: none;text-align: right;}
+.logos-box .search .tips-bg1 s{display:inline-block;background:url(/images/trade/Gouicon.png) no-repeat left top;width:21px;height:21px;vertical-align:middle;margin:0 10px 0 10px;}
+.logos-box .search .fade-bg1{position:absolute;left:1px;top:1px;width:472px;height:37px;background-color:#000;display:none;opacity:0.8;filter:alpha(opacity=80);*zoom:1;}
+.logos-box .search .loading{position:absolute;left:1px;top:1px;width:466px;height:31px;line-height:20px;background-color:#FFF;display:none;color:#999;text-align:center;padding-top:2px;}
+.logos-box .search .loading .loadingbar{width:404px;margin:0 auto;border-radius:10px;border:1px solid #FFF;background-color:#e9e9e9;height:6px;position:relative;}
+.logos-box .search .loading .loadingbar i{position:absolute;left:0;top:0;width:auto;height:6px;background-color:#80e0a2;border-radius:10px;max-width:318px;}
+.logos-box .hupu-icon{margin-top:10px; left:-5px; position: relative;}
+.logos-box .haitaodashi-cart{
+    float: right;
+    width: 50px;
+    height: 37px;
+    border: 1px solid #d0d0d0;
+    line-height: 37px;
+    padding: 0 37px 0 13px;
+    font-size: 16px;
+    background: url("//sh1.hoopchina.com.cn/images/haitaodashi/icon-cart.png") no-repeat scroll 65px center transparent;
+    margin-top: 2px;
+}
+.logos-box .haitaodashi-cart:hover{
+    color:#a700ff;
+}
+.search .tags{
+    position: absolute;
+    height: 25px;
+    line-height: 25px;
+    right: 65px;
+    top:7px;
+}
+
+.search .tags a{
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    line-height: 25px;
+    padding: 0 8px;
+    margin-left: 10px;
+    color:#666666;
+}
+.search .tags a.redlink{
+    background-color: transparent;
+    text-decoration: underline;
+}
+.shihuo-nav-shsug {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #a700ff;
+    border-top: 0px;
+    box-shadow: 1px 1px 3px #ededed;
+    display: none;
+    position: absolute;
+    top: 39px;
+    left: 0px;
+    width: 535px;
+    z-index: 1;
+}
+.shihuo-nav-shsug li{
+    font-size: 14px;
+    padding: 3px 8px;
+}
+.shihuo-nav-shsug li.on{
+    background-color: #f0f0f0;
+}
+.top-ban-img-home-g,.top-ban-img-home-g2{
+    text-align:center;
+    width:1080px;
+    margin:0 auto;
+    position:relative;
+}
+
+.top-ban-img-home-g .close-g-home{
+    position:absolute;
+    right:10px;
+    top:20px;
+    cursor:pointer;
+}
+
+.top-ban-img-home-g2 .animate{
+    height:350px;
+    overflow:hidden;
+}
+.top-ban-img-home-g2 .animate.splid{
+    height:350px;
+    transition: all 0.6s ease;
+}
+.top-ban-img-home-g2 .right-silg,.top-ban-img-home-g2 .right-silg2{
+    width:30px;
+    position:absolute;
+    right:-30px;
+    top:0px;
+    background-color:#f1f1f1;
+    text-align:center;
+    padding:7px 0;
+    color:#666666;
+    line-height:16px;
+    cursor:pointer;
+}
+
+.adall-area-top{
+
+}
+
+.adall-area-top2{
+    margin-top:10px;
+}
+
+.top-nva-list-small {
+    background-color: #ffffff;
+    height: 40px;
+    font-size:14px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.05);
+    position:relative;
+    z-index:28;
+}
+.top-nva-list-small dl {
+    width: 1080px;
+    margin: 0 auto;
+    padding-top: 12px;
+}
+.top-nva-list-small dl a{
+    display:block;
+    color:#666666;
+}
+.top-nva-list-small dl dd:hover a{
+    color:#da1d26;
+    text-decoration:none;
+}
+.top-nva-list-small dl dt {
+    float: left;
+    border-left: 2px #b70000 solid;
+    font-size: 16px;
+    padding-left: 10px;
+    position:relative;
+    top:-2px;
+}
+.top-nva-list-small dl dd {
+    float: left;
+    padding: 0 30px;
+    border-right: 1px #e5e5e5 solid;
+    color: #666666;
+    position: relative;
+}
+.top-nva-list-small dl dd.d1 s {
+    display: inline-block;
+    background: url("//sh1.hoopchina.com.cn/images/trade/common/icon1.png") no-repeat;
+    width: 14px;
+    height: 19px;
+    position:relative;
+    top: -2px;
+    margin-right:5px;
+    vertical-align:middle;
+}
+.top-nva-list-small dl dd.d2 s {
+    display: inline-block;
+    background: url("//sh1.hoopchina.com.cn/images/trade/common/icon2.png") no-repeat;
+    width: 24px;
+    height: 9px;
+    position:relative;
+    top: -2px;
+    margin-right:5px;
+    vertical-align:middle;
+}
+.top-nva-list-small dl dd.d3 s {
+    display: inline-block;
+    background: url("//sh1.hoopchina.com.cn/images/trade/common/icon3.png") no-repeat;
+    width: 16px;
+    height: 16px;
+    position:relative;
+    top: -1px;
+    margin-right:5px;
+    vertical-align:middle;
+}
+.top-nva-list-small dl dd.d4 s {
+    display: inline-block;
+    background: url("//sh1.hoopchina.com.cn/images/trade/common/icon4.png") no-repeat;
+    width: 18px;
+    height: 18px;
+    position:relative;
+    top: -1px;
+    margin-right:5px;
+    vertical-align:middle;
+}
+.top-nva-list-small dl dd.d5 s {
+    display: inline-block;
+    background: url("//sh1.hoopchina.com.cn/images/trade/common/icon5.png") no-repeat;
+    width: 24px;
+    height: 13px;
+    position:relative;
+    top: -2px;
+    margin-right:5px;
+    vertical-align:middle;
+}
+.top-nva-list-small dl dd.d6 s {
+    display: inline-block;
+    background: url("//sh1.hoopchina.com.cn/images/trade/common/icon6.png") no-repeat;
+    width: 16px;
+    height: 14px;
+    position:relative;
+    top: -1px;
+    margin-right:5px;
+    vertical-align:middle;
+}
+.top-nva-list-small dl dd.on a{
+    color:#da1d26;
+}
+.top-nva-list-small dl .d1.on s,.top-nva-list-small dl .d1:hover s{
+    background: url("//sh1.hoopchina.com.cn/images/trade/common/icon1-on.png") no-repeat;
+}
+.top-nva-list-small dl .d2.on s,.top-nva-list-small dl .d2:hover s{
+    background: url("//sh1.hoopchina.com.cn/images/trade/common/icon2-on.png") no-repeat;
+}
+.top-nva-list-small dl .d3.on s,.top-nva-list-small dl .d3:hover s{
+    background: url("//sh1.hoopchina.com.cn/images/trade/common/icon3-on.png") no-repeat;
+}
+.top-nva-list-small dl .d4.on s,.top-nva-list-small dl .d4:hover s{
+    background: url("//sh1.hoopchina.com.cn/images/trade/common/icon4-on.png") no-repeat;
+}
+.top-nva-list-small dl .d5.on s,.top-nva-list-small dl .d5:hover s{
+    background: url("//sh1.hoopchina.com.cn/images/trade/common/icon5-on.png") no-repeat;
+}
+.top-nva-list-small dl .d6.on s,.top-nva-list-small dl .d6:hover s{
+    background: url("//sh1.hoopchina.com.cn/images/trade/common/icon6-on.png") no-repeat;
+}
+.login-content{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:0;
+    z-index: 999;
+    display: none;
+}
+.login-content .login-bg{
+    background-color: #000;
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:0;
+}
+.login-content .login-box{
+    width: 370px;
+    min-height: 300px;
+    background-color: #FFF;
+    padding: 15px 65px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin:-165px 0 0 -250px;
+}
+.login-content .close-btn{
+    background: url("//sh1.hoopchina.com.cn/images/haitaodashi/icon-close-btn.png") no-repeat scroll center center transparent;
+    width: 12px;
+    height:12px;
+    position: absolute;
+    right: 10px;
+    top:10px;
+    cursor: pointer;
+}
+.login-content .login-wrap{
+    margin: 0 auto;
+    width: 350px;
+    position: relative;
+}
+.login-content .login-wrap .title{
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+}
+.login-content .login-wrap .title i{
+    width: 30px;
+    height: 2px;
+    background: url("//sh1.hoopchina.com.cn/images/haitaodashi/title-border.png") no-repeat scroll center center transparent;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -15px;
+}
+.login-content .login-wrap input{
+    font-size: 14px;
+    color: #999999;
+    text-indent: 15px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #e5e5e5;
+}
+.login-content .login-wrap .row{
+    margin-top: 20px;
+}
+.login-content .login-wrap .tel-num input{
+    width: 348px;
+}
+.login-content .login-wrap input.error{
+    border: 1px solid red;
+}
+.login-content .login-wrap .password input{
+    width: 208px;
+    margin-right: 10px;
+}
+.login-content .login-wrap .password .col{
+    float: left;
+    position: relative;
+}
+.login-content .login-wrap  .mobile-btn{
+    width: 128px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #a700ff;
+    text-align: center;
+    font-size: 14px;
+    color: #a700ff;
+    cursor: pointer;
+}
+.login-content .login-wrap .login-countDown{
+    width: 128px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #a700ff;
+    text-align: center;
+    font-size: 14px;
+    color: #a700ff;
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: #FFFFFF;
+    display: none;
+}
+.login-content .login-wrap .login-btn{
+    margin-top: 20px;
+    line-height: 42px;
+    background: url("//sh1.hoopchina.com.cn/images/haitaodashi/submit-bg.png") no-repeat scroll center center transparent;
+    color: #FFF;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.login-content .login-wrap .login-btn:hover{
+    opacity: 0.7;
+}
+.login-bottom{
+    width: 350px;
+    font-size: 14px;
+    margin: 10px auto;
+}
+.login-bottom a{
+    color:#134bc9;
+    text-decoration: underline!important;
+}
+.login-bottom .fleft{
+    float: left;
+}
+.login-bottom .fleft span{
+    margin-right: 10px;
+}
+.login-bottom .fright{
+    float: right;
+}
+.error-tips{
+    color:#b50000;
+    line-height: 30px;
+    margin-top: 5px;
+    display: none;
+}
+.protocol{
+    line-height: 20px;
+    padding-top: 10px;
+    display: none;
+}
+.protocol i{
+    background: url(//sh1.hoopchina.com.cn/images/trade/success-check.png) center center no-repeat;
+    background-color: #a700ff;
+    width: 20px;
+    height:20px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.protocol a{
+    color: #4dbcff;
+}
+.protocol a:hover{
+    text-decoration: underline;
+}
